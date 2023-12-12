@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" type="text/css" />
+    <link rel="stylesheet" href="../src/input.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main
+      class="min-h-screen w-full flex justify-center items-center bg-Very-Dark-Blue p-4"
+    >
+      <section
+        id="main"
+        class="bg-[#1F2630] w-full flex flex-col gap-6 p-6 rounded-2xl max-w-sm"
+      >
+        <div id="rating-section" class="flex flex-col gap-6 p-5">
+          <div>
+            <img src="./images/icon-star.svg" alt="star-icon" />
+          </div>
+          <div>
+            <h2 class="text-White text-2xl font-bold">How did we do ?</h2>
+          </div>
+          <div>
+            <p class="text-sm text-Medium-Grey">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering
+            </p>
+          </div>
+          <div
+            id="container"
+            class="flex justify-between w-full mx-auto"
+            id="rating-box"
+          >
+            <span
+              class="flex items-center justify-center w-10 h-10 rounded-full text-Medium-Grey bg-Dark-Blue hover:text-White hover:bg-Orange cursor-pointer shadow-2xl"
+              >1</span
+            >
+            <span
+              class="flex items-center justify-center w-10 h-10 rounded-full text-Medium-Grey bg-Dark-Blue hover:text-White hover:bg-Orange cursor-pointer"
+              >2</span
+            >
+            <span
+              class="flex items-center justify-center w-10 h-10 p-3 rounded-full text-Medium-Grey bg-Dark-Blue hover:text-White hover:bg-Orange cursor-pointer"
+              >3</span
+            >
+            <span
+              class="flex items-center justify-center w-10 h-10 p-3 rounded-full text-Medium-Grey bg-Dark-Blue hover:text-White hover:bg-Orange cursor-pointer"
+              >4</span
+            >
+            <span
+              class="flex items-center justify-center w-10 h-10 p-3 rounded-full text-Medium-Grey bg-Dark-Blue hover:text-White hover:bg-Orange cursor-pointer"
+              >5</span
+            >
+          </div>
+          <div>
+            <button
+              id="button"
+              class="bg-Orange text-White mx-auto py-2 hover:bg-White hover:text-Orange w-full rounded-full font-bold text-sm"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+        <div
+          id="success-screen"
+          class="hidden flex-col gap-5 p-5 justify-center items-center"
+        >
+          <div>
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="illustration-thank-you"
+            />
+          </div>
+          <div class="text-Orange text-sm bg-Dark-Blue py-1 px-2 rounded-full">
+            You selected <small class="text-sm"></small> out of 5
+          </div>
+          <div class="text-2xl text-White font-bold">Thank You</div>
+          <div>
+            <p class="text-sm text-Medium-Grey text-center">
+              we appreciate you taking a time to give a rating. If you ever need
+              more support, don't hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
